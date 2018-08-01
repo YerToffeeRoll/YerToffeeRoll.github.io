@@ -1,523 +1,344 @@
 <!doctype html>
-<html>
+<html class="no-js" lang="zxx">
+
 <head>
     <meta charset="utf-8">
+    <meta name="author" content="John Doe">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home | Sam Killen</title>
-    <link rel='stylesheet' href='css/style.min.css' type='text/css' media='all'/>
-    <script type='text/javascript' src='js/jquery-1.11.2.min.js'></script>
-    <script type='text/javascript' src='js/modernizr.custom.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Home</title>
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+    <!-- Plugin-CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Main-Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
-
-    <style type="text/css">.recentcomments a {
-        display: inline !important;
-        padding: 0 !important;
-        margin: 0 !important;
-    }</style>
-
-
-    <meta name="apple-mobile-web-app-title" content="PolicyServices.">
-    <meta name="application-name" content="PolicyServices.">
-
-
-    <script>
-        $(window).load(function () {
-            if ($('body').is('.home')) {
-                setTimeout(function () {
-                    $('.preloader').fadeOut('slow').trigger('classChange');
-                }, 1000);
-            }
-
-        });
-    </script>
-    <style>
-
-        .preloader {
-            display: none;
-        }
-
-        .home .preloader {
-            display: block;
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            z-index: 999999999;
-            background: #1F1E1E;
-            color: white;
-            text-align: center;
-            display: table;
-
-        }
-
-        .home .preloader img {
-            display: block;
-            margin: 0 auto;
-        }
-
-        .home .preload-ani svg {
-            width: 100px;
-            height: 100px;
-            margin: 20px;
-            display: inline-block;
-        }
-
-        .home .preloader-animation {
-            width: 100%;
-            text-align: center;
-        }
-
-        .home .preloader-logo {
-            max-width: 400px;
-            padding: 20px;
-            margin: 0 auto;
-
-            margin-top: 30px;
-            display: block;
-        }
-
-        .home .preloader-content {
-            display: table-cell;
-            vertical-align: middle;
-        }
-
-        .intro-loader {
-            width: 50px;
-            height: 50px;
-            -webkit-animation: infinite-spinning 1s infinite;
-            animation: infinite-spinning 1s infinite;
-            margin: 0 auto;
-            margin-top: 40px;
-        }
-
-        @-webkit-keyframes infinite-spinning {
-            from {
-                -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-            }
-            to {
-                -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
-            }
-        }
-
-        @keyframes infinite-spinning {
-            from {
-                -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-            }
-            to {
-                -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
-            }
-        }
-
-
-    </style>
-
-    <script>try {
-        Typekit.load({async: true});
-    } catch (e) {
-    }</script>
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body class="home page page-id-7 page-template-default">
-<!--[if lt IE 9]>
-<div class="alert alert-warning">
-    You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your
-    browser</a> to improve your experience.
-</div>
-<![endif]-->
 
-<div class="preloader">
-    <div class="preloader-content">
-        <div class="preloader-logo"><img src=""></div>
-        <div class="preload-ani">
-            <svg  version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
-      <rect x="15" y="50" width="10" height="10" fill="#08b1b7">
-        <animateTransform attributeType="xml"
-          attributeName="transform" type="translate"
-          values="0 0; 0 20; 0 0"
-          begin="0" dur="0.8s" repeatCount="indefinite" />
-      </rect>
-      <rect x="30" y="50" width="10" height="10" fill="#08b1b7">
-        <animateTransform attributeType="xml"
-          attributeName="transform" type="translate"
-          values="0 0; 0 20; 0 0"
-          begin="0.2s" dur="0.8s" repeatCount="indefinite" />
-      </rect>
-      <rect x="45" y="50" width="10" height="10" fill="#08b1b7">
-        <animateTransform attributeType="xml"
-          attributeName="transform" type="translate"
-          values="0 0; 0 20; 0 0"
-          begin="0.4s" dur="0.8s" repeatCount="indefinite" />
-      </rect>
-  </svg>
+<body data-spy="scroll" data-target="#primary-menu">
+
+    <div class="preloader">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
         </div>
-
     </div>
-</div>
-
-<div id="hamburger-wrapper">
-    <div id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-</div>
-
-
-<div class="overlay overlay-door closedMenu">
-    <nav class="main-nav" role="navigation">
-
-        <ul id="menu-main" class="">
-            <li id='menu-item-126'
-                class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-7 current_page_item">
-                <a title='Home' href="index.html">
-                    <span data-hover="Home">Home</span></a></li>
-           <!-- <li id='menu-item-22' class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="NewToPs.html" title='New to Sam Killen?'>
-                    <span data-hover="NewtoSam Killen">New to Sam Killen?</span></a></li>
-            <li id='menu-item-18' class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="logIn.html" title='Client Login'>
-                    <span data-hover="ClientLogin">Client Login</span></a></li>
-            <li id='menu-item-20' class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="ourApproach.html" title='Our Approach'>
-                    <span data-hover="OurApproach">Our Approach</span></a></li>
-            <li id='menu-item-23' class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="theTeam.html" title='Contact'>
-                    <span data-hover="Contact">Contact</span></a></li>-->
-        </ul>
-
-
-    </nav>
-</div>
-
-
-<div class="hero hero-start">
-    <canvas id="canvas"></canvas>
-
-    <ul id="scene">
-
-        <li class="layer " data-depth="2.20">
-            <div class="floatPS-img" style="background-image: url(img/profilePic.png);"></div>
-        </li>
-        <li class="layer " data-depth="0.70">
-            <div class="floatPS-headline">
-                <h1><strong>Sam Killen</strong></h1>
-            </div>
-        </li>
-    </ul>
-
-
-</div>
-
-<div id="content">
-   <!-- <div class="fullwidth mainContent">
+    <!--Mainmenu-area-->
+    <div class="mainmenu-area" data-spy="affix" data-offset-top="100">
         <div class="container">
-            <div class="row">
-                <div class="col-md-18 col-md-offset-3">
-                    <div class="section-title">
-                        <span>Our business allows you to focus on giving great financial advice.</span>
-
-                        <h2 class=""></h2>
-                    </div>
-                </div>
-
-                <div class="col-md-18 col-md-offset-3 intro-copy">
-
-                    <p>
-
-                    <p class="p1"><span class="s1">Being an IFA involves two very separate calls on your time.On one hand is the true value you add through giving your clients relevant and appropriate financial advice.On the other is an ever-growing mountain of paperwork and administration. </span>
-                    </p>
-
-                    <p class="p1">Sam Killen exists to do the admin for you, allowing you to spend your time adding
-                        real value. It is a service we developed to assist advisers switching their business to
-                        restricted firms, particularly St James’ Place.</p>
-
-                    </p>
-                    <a class="btn-wrapper btn-white">
-                        <div class="btn-container">
-                            <div class="btn-content" data-btntext="Welcome">Welcome</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>-->
-
-
-   <!-- <div class="fullwidth whatWEdoContent">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-20 col-md-offset-2">
-                    <div class="section-title">
-                        <span>Our Service to You</span>
-
-                        <h2 class="">What we do</h2>
-                    </div>
-                </div>
-
-
-                <div class="col-md-20 col-md-offset-2">
-                    <div class="col-md-8 wwd">
-                        <div class="wwd-icon">
-                            <img class="wwdpic-servicing-img" src="img/service-branding.svg" alt="PS - Branding Icon">
-                        </div>
-                        <div class="service-content">
-                            <h3>Servicing</h3>
-
-                            <p>We do not compete with your advisory service in any way. Our role is to reduce your
-                                in-house costs and obligations, offering you online access to real-time client account
-                                information.</p>
-
-
-                        </div>
-                    </div>
-                    <div class="col-md-8 wwd">
-                        <div class="wwd-icon">
-                            <img src="img/service-web.svg" alt="PS - Webdesign Icon">
-                        </div>
-                        <div class="service-content">
-                            <h3>Client Area</h3>
-
-                            <p>If you are new to Sam Killen, our online application ‘myPSaccount.com’ gives you
-                                real-time access to your clients’ information..</p>
-
-
-                        </div>
-                    </div>
-                    <div class="col-md-8 wwd">
-                        <div class="wwd-icon">
-                            <img src="img/service-print.svg" alt="PS - Print Icon">
-                        </div>
-                        <div class="service-content">
-                            <h3>Correspondence</h3>
-
-                            <p>Sam Killen exists to do the admin for you, allowing you to spend your time adding
-                                real value. It is a service we developed to assist advisers switching their business to
-                                restricted firms, particularly St James’ Place.</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <a class="btn-wrapper">
-                    <div class="btn-container">
-                        <div class="btn-content" src="NewToPs.html" data-btntext="Join Us">Join Us</div>
-                    </div>
+            <!--Logo-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand logo">
+                    <h2>YerToffeeRoll</h2>
                 </a>
+            </div>
+            <!--Logo/-->
+            <nav class="collapse navbar-collapse" id="primary-menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#home-page">Home</a></li>
+                    <li><a href="#feature-page">Features</a></li>
+                    <li><a href="#contact-page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--Mainmenu-area/-->
 
 
+
+    <!--Header-area-->
+    <header class="header-area overlay full-height relative v-center" id="home-page">
+        <div class="absolute anlge-bg"></div>
+        <div class="container">
+            <div class="row v-center">
+                <div class="col-xs-12 col-md-12 header-text">
+                    <h2>Sam Killen Github </h2>
+                    <p>This most original guy on Github.</p>
+                    <a href="https://github.com/YerToffeeRoll" class="button white">GET SOME</a>
+                </div>
+                <!--<div class="hidden-xs hidden-sm col-md-5 text-right">-->
+                    <!--<div class="screen-box screen-slider">-->
+                        <!--<div class="item">-->
+                            <!--<img src="images/screen-1.jpg" alt="">-->
+                        <!--</div>-->
+                        <!--<div class="item">-->
+                            <!--<img src="images/screen-2.jpg" alt="">-->
+                        <!--</div>-->
+                        <!--<div class="item">-->
+                            <!--<img src="images/screen-3.jpg" alt="">-->
+                        <!--</div>-->
+                        <!--<div class="item">-->
+                            <!--<img src="images/screen-4.jpg" alt="">-->
+                        <!--</div>-->
+                        <!--<div class="item">-->
+                            <!--<img src="images/screen-5.jpg" alt="">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
             </div>
         </div>
-    </div>-->
+    </header>
+    <!--Header-area/-->
 
-    <!--<div class="fullwidth no-padding picNav">
-        <div class="picNav-content">
-
-            <ul class="row no-margin">
-
-
-                <li class="col-md-8">
-                    <a href="NewToPs.html" class="work">
-                        <div class="bg-image" style="background-image: url(img/homeStockLaptop.jpg);"></div>
-                        <div class="bg-color" style="background-color: #bf311d;"></div>
-                        <div class="vertical-align">
-                            <div class="content">
-                                <span class="desc-top">NEW TO POLICY SERVICES?</br></span>
-                                <span class="desc-bottom">SIGN UP HERE</span>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-
-
-                <li class="col-md-8">
-                    <a href="index.html" class="work">
-                        <div class="bg-image"
-                             style="background-image: url(img/typing-vintage-technology-keyboard.jpg);"></div>
-                        <div class="bg-color" style="background-color: #2888b4;"></div>
-                        <div class="vertical-align">
-                            <div class="content">
-                                <span class="desc-top">HOME</br></span>
-                                <span class="desc-bottom">BACK TO HOMEPAGE</span>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-
-
-                <li class="col-md-8">
-                    <a href="logIn.html" class="work">
-                        <div class="bg-image" style="background-image: url(img/login.jpg);"></div>
-                        <div class="bg-color" style="background-color: #036c2b;"></div>
-                        <div class="vertical-align">
-                            <div class="content">
-                                <span class="desc-top">LOG IN</br></span>
-                                <span class="desc-bottom">ACCESS MY PS ACCOUNT</span>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-
-
-                <li class="col-md-8">
-                    <a href="ourApproach.html" class="work">
-                        <div class="bg-image" style="background-image: url(img/stairs-man-person-walking.jpg);"></div>
-                        <div class="bg-color" style="background-color: #518837;"></div>
-                        <div class="vertical-align">
-                            <div class="content">
-                                <span class="desc-top">OUR APPROACH</br></span>
-                                <span class="desc-bottom">OUR VISION</span>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-
-
-                <li class="col-md-8">
-                    <a href="contact.html" class="work">
-                        <div class="bg-image" style="background-image: url(img/Contact.jpg);"></div>
-                        <div class="bg-color" style="background-color: #4c8785;"></div>
-                        <div class="vertical-align">
-                            <div class="content">
-                                <span class="desc-top">CONTACT</br></span>
-                                <span class="desc-bottom">E-mail<div class="work-cat-divider">/</div> Call<div
-                                        class="work-cat-divider">/
-                                </div> Post<div class="work-cat-divider">/</div> </span>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-
-
-                <li class="col-md-8">
-                    <a href="theTeam.html" class="work">
-                        <div class="bg-image" style="background-image: url(img/teamSky.jpg);"></div>
-                        <div class="bg-color" style="background-color: #08B1B7;"></div>
-                        <div class="vertical-align">
-                            <div class="content">
-                                <span class="desc-top">Meet The Team</br></span>
-                                <span class="desc-bottom"><div class="work-cat-divider">/</div> </span>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-
-        </div>
-    </div>-->
-
-    <div class="fullwidth contactFooter-showoff">
-
-        <div class="col-md-16 col-md-offset-4">
-        </div>
-
+    <section class="gray-bg section-padding" id="feature-page">
         <div class="container">
             <div class="row">
-                <div class="col-md-18 col-md-offset-3">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <div class="page-title">
+                        <a href="https://github.com/YerToffeeRoll"><h2>Repositories</h2></a>
+                        <p>A list of all the repositories currently held in the name of majesticness.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div id="footer" class="fullwidth footer">
-        <div class="container footer-content">
-
             <div class="row">
-                <div class="footer-bottom">
-                    <div class="col-md-16 col-md-offset-4 footer-contact">
-                        <p>© 2015 Sam Killen </p>
-
-                    <!--    <p>Sam Killen Limited is Registered In Scotland No. 230167</p>-->
-
-                        <!--<p>Registered Office Priorsford, 75 Grahamsdyke Road, Bo’ness EH51 9DZ</p>-->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <a href="https://github.com/YerToffeeRoll/PlaylistManager">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/portfolio-icon-1.png" alt="">
+                        </div>
+                        <h2>playlist manager</h2>
+                        <p>Playlist Manager with soundcloud functionality</p>
                     </div>
-
-                    <div class="col-md-8 col-md-push-8 footer-social">
-                        <a href="https://www.facebook.com" target="_blank" class="social-icon">
-                            <svg  version="1.1" class="social-icon-fb" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-										 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-									<circle class="social-icon-outline" fill="none" stroke="#08b1b7" stroke-width="5" stroke-miterlimit="10" cx="99.3" cy="99.7" r="78.3"/>
-									<g>
-										<path class="social-icon-icon" fill="#08b1b7" d="M119.5,60.9V73h-7.2c-2.6,0-4.4,0.6-5.3,1.7c-0.9,1.1-1.4,2.8-1.4,5v8.7H119l-1.8,13.6h-11.7v34.9H91.5
-											v-34.9H79.8V88.3h11.7v-10c0-5.7,1.6-10.1,4.8-13.3c3.2-3.1,7.4-4.7,12.7-4.7C113.5,60.3,117,60.5,119.5,60.9z"/>
-									</g>
-									</svg>
-                        </a>
-                        <a target="_blank" class="social-icon">
-                            <svg  version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-										 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-									<circle class="social-icon-outline" fill="none" stroke="#08b1b7" stroke-width="5" stroke-miterlimit="10" cx="100.1" cy="100.3" r="78.3"/>
-									<g>
-										<path class="social-icon-icon" fill="#08b1b7" d="M139.8,79.9v48.3c0,2-0.7,3.6-2.1,5c-1.4,1.4-3.1,2.1-5,2.1H67.4c-2,0-3.6-0.7-5-2.1
-											c-1.4-1.4-2.1-3.1-2.1-5V79.9c0-2,0.7-3.6,2.1-5c1.4-1.4,3.1-2.1,5-2.1h65.3c2,0,3.6,0.7,5,2.1C139.2,76.3,139.8,78,139.8,79.9z
-											 M134.2,81.6c0-0.1,0-0.2,0-0.5c0-0.3,0-0.5,0-0.6s0-0.3,0-0.6c0-0.3-0.1-0.4-0.1-0.6s-0.2-0.3-0.2-0.4c-0.1-0.1-0.2-0.3-0.4-0.3
-											c-0.2-0.1-0.4-0.1-0.6-0.1H67.4c-0.4,0-0.7,0.1-1,0.4c-0.3,0.3-0.4,0.6-0.4,1c0,5,2.2,9.2,6.5,12.6c5.7,4.5,11.6,9.2,17.8,14.1
-											c0.2,0.1,0.7,0.6,1.6,1.3c0.9,0.7,1.5,1.3,2,1.7c0.5,0.4,1.2,0.9,2,1.4c0.8,0.5,1.6,1,2.2,1.2s1.3,0.4,1.9,0.4h0h0
-											c0.6,0,1.2-0.1,1.9-0.4c0.7-0.3,1.4-0.7,2.2-1.2c0.8-0.5,1.5-1,2-1.4s1.2-0.9,2-1.7c0.9-0.7,1.4-1.2,1.6-1.3
-											c6.2-4.9,12.1-9.6,17.8-14.1c1.6-1.3,3.1-3,4.5-5.1C133.5,85.3,134.2,83.3,134.2,81.6z M134.2,128.2V94.1c-0.9,1.1-2,2-3.1,2.9
-											c-7.9,6.1-14.2,11.1-18.9,15c-1.5,1.3-2.7,2.3-3.7,3c-0.9,0.7-2.2,1.4-3.8,2.2c-1.6,0.7-3.1,1.1-4.6,1.1h0h0
-											c-1.4,0-2.9-0.4-4.5-1.1c-1.6-0.7-2.9-1.4-3.8-2.2c-0.9-0.7-2.2-1.7-3.7-3c-4.7-3.9-11-8.9-18.9-15c-1.1-0.9-2.1-1.9-3.1-2.9v34.1
-											c0,0.4,0.1,0.7,0.4,1c0.3,0.3,0.6,0.4,1,0.4h65.3c0.4,0,0.7-0.1,1-0.4C134,129,134.2,128.6,134.2,128.2z"/>
-									</g>
-									</svg>
-
-                        </a>
-                        <a href="https://twitter.com/" target="_blank" class="social-icon">
-                            <svg  version="1.1" class="social-icon-behance" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-										 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-									<circle class="social-icon-outline" fill="none" stroke="#08b1b7" stroke-width="5" stroke-miterlimit="10" cx="100.4" cy="100.7" r="78.3"/>
-									<g>
-										<path class="social-icon-icon" fill="#08b1b7" d="M136.3,78.9c-2.1,3-4.5,5.6-7.5,7.7c0,0.4,0,1.1,0,1.9c0,4-0.6,8-1.8,12c-1.2,4-2.9,7.8-5.3,11.4
-											c-2.4,3.7-5.2,6.9-8.5,9.7c-3.3,2.8-7.2,5.1-11.9,6.7c-4.6,1.7-9.6,2.5-14.9,2.5c-8.3,0-15.9-2.2-22.8-6.7c1.1,0.1,2.3,0.2,3.6,0.2
-											c6.9,0,13.1-2.1,18.5-6.4c-3.2-0.1-6.1-1.1-8.7-3c-2.5-1.9-4.3-4.4-5.3-7.3c1,0.2,2,0.2,2.8,0.2c1.3,0,2.6-0.2,3.9-0.5
-											c-3.4-0.7-6.3-2.4-8.5-5.1c-2.3-2.7-3.4-5.9-3.4-9.5v-0.2c2.1,1.2,4.3,1.8,6.7,1.9c-2-1.4-3.6-3.1-4.8-5.3
-											c-1.2-2.2-1.8-4.5-1.8-7.1c0-2.7,0.7-5.2,2-7.5c3.7,4.6,8.2,8.2,13.6,11c5.3,2.7,11,4.3,17.1,4.6C99.2,89,99,87.9,99,86.8
-											c0-4.1,1.5-7.6,4.4-10.5s6.4-4.4,10.5-4.4c4.3,0,7.9,1.6,10.9,4.7c3.3-0.6,6.5-1.8,9.4-3.6c-1.1,3.5-3.3,6.3-6.5,8.2
-											C130.5,80.9,133.4,80.1,136.3,78.9z"/>
-									</g>
-									</svg>
-                        </a>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <a href="https://github.com/YerToffeeRoll/php-sparkpost">
+                    <div class="box">
+                        <div class="box-icon">
+                              <img src="images/portfolio-icon-3.png" alt="">
+                        </div>
+                        <h2>php-sparkpost</h2>
+                        <p> SparkPost client library for PHP</p>
                     </div>
-                    <div class="col-md-8 col-md-pull-8 footer-left">
-                        <p>Sam Killen | Scotland</p>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <a href="https://github.com/YerToffeeRoll/garmin-connect-export">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/portfolio-icon-2.png" alt="">
+                        </div>
+                       <h3>garmin-connect-export</h3>
+                        <p>Download a copy of your Garmin Connect data, including stats and GPX tracks.</p>
                     </div>
-                    <div class="col-md-8 footer-right">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <a href="https://github.com/YerToffeeRoll/Soccerway-Data-Scrapper">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/portfolio-icon-4.png" alt="">
+                        </div>
+                       <h3>Soccerway-data-scraper</h3>
+                        <p>This script can be run through command line, it will scrap data from soccreway.com and will generate an XML file...</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <a href="https://github.com/YerToffeeRoll/GraphicsAssignment2">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/portfolio-icon-5.png" alt="">
+                        </div>
+                        <h3>Graphics Assignment 2</h3>
+                        <p>Super Soccer!</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <a href="https://github.com/YerToffeeRoll/SlaverYersel">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/portfolio-icon-6.png" alt="">
+                        </div>
+                        <h3>SlaverYersel</h3>
+                        <p>An attempt at cloning twitter.... </p>
+
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<section class="section-padding gray-bg" id="blog-page">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-xs-12 col-sm-4">-->
+                    <!--<div class="single-blog">-->
+                        <!--<div class="blog-photo">-->
+                            <!--<img src="images/small1.jpg" alt="">-->
+                        <!--</div>-->
+                        <!--<div class="blog-content">-->
+                            <!--<h3><a href="#">Beautiful Place for your Great Journey</a></h3>-->
+                            <!--<ul class="blog-meta">-->
+                                <!--<li><span class="ti-user"></span> <a href="#">Admin</a></li>-->
+                                <!--<li><span class="ti-calendar"></span> <a href="#">Feb 01, 2017</a></li>-->
+                            <!--</ul>-->
+                            <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nemo eaque expedita aliquid dolorem repellat perferendis, facilis aut fugit, impedit.</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-4">-->
+                    <!--<div class="single-blog">-->
+                        <!--<div class="blog-photo">-->
+                            <!--<img src="images/small2.jpg" alt="">-->
+                        <!--</div>-->
+                        <!--<div class="blog-content">-->
+                            <!--<h3><a href="#">Beautiful Place for your Great Journey</a></h3>-->
+                            <!--<ul class="blog-meta">-->
+                                <!--<li><span class="ti-user"></span> <a href="#">Admin</a></li>-->
+                                <!--<li><span class="ti-calendar"></span> <a href="#">Feb 01, 2017</a></li>-->
+                            <!--</ul>-->
+                            <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nemo eaque expedita aliquid dolorem repellat perferendis, facilis aut fugit, impedit.</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xs-12 col-sm-4">-->
+                    <!--<div class="single-blog">-->
+                        <!--<div class="blog-photo">-->
+                            <!--<img src="images/small3.jpg" alt="">-->
+                        <!--</div>-->
+                        <!--<div class="blog-content">-->
+                            <!--<h3><a href="#">Beautiful Place for your Great Journey</a></h3>-->
+                            <!--<ul class="blog-meta">-->
+                                <!--<li><span class="ti-user"></span> <a href="#">Admin</a></li>-->
+                                <!--<li><span class="ti-calendar"></span> <a href="#">Feb 01, 2017</a></li>-->
+                            <!--</ul>-->
+                            <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nemo eaque expedita aliquid dolorem repellat perferendis, facilis aut fugit, impedit.</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
 
 
-                        <ul id="menu-footer" class="">
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a
-                                    href="">HOME</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66"><a
-                                    href="">BLOG</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a
-                                    href="">CONTACT</a></li>
-                        </ul>
 
+
+
+    <footer class="footer-area relative sky-bg" id="contact-page">
+        <div class="absolute footer-bg"></div>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                        <div class="page-title">
+                            <h2>Get In Contact</h2>
+                            <p>Whether your sending a quick hello or want to discuss something</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <address class="side-icon-boxes">
+                            <div class="side-icon-box">
+                                <div class="side-icon">
+                                    <img src="images/location-arrow.png" alt="">
+                                </div>
+                                <a href="https://www.regalmajestic.co.uk"> <p><strong>Website: </strong><br />regalmajestic.co.uk</p></a>
+                            </div>
+                            <!--<div class="side-icon-box">-->
+                                <!--<div class="side-icon">-->
+                                    <!--<img src="images/phone-arrow.png" alt="">-->
+                                <!--</div>-->
+                                <!--<p><strong>Telephone: </strong>-->
+                                    <!--<a href="callto:8801812726495">+8801812726495</a> <br />-->
+                                    <!--<a href="callto:8801687420471">+8801687420471</a>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                            <div class="side-icon-box">
+                                <div class="side-icon">
+                                    <img src="images/mail-arrow.png" alt="">
+                                </div>
+                                <p><strong>E-mail: </strong>
+                                    <a href="mailto:sam@regalmajestic.co.uk">sam@regalmajestic.co.uk</a> <br />
+                                </p>
+                            </div>
+                        </address>
+                    </div>
+                    <div class="col-xs-12 col-md-8">
+                        <form action="process.php" id="contact-form" method="post" class="contact-form">
+                            <div class="form-double">
+                                <input type="text" id="form-name" name="form-name" placeholder="Your name" class="form-control" required="required">
+                                <input type="email" id="form-email" name="form-email" class="form-control" placeholder="E-mail address" required="required">
+                            </div>
+                            <input type="text" id="form-subject" name="form-subject" class="form-control" placeholder="Message topic">
+                            <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea>
+                            <button type="sibmit" class="button">Submit</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 pull-right">
+                        <ul class="social-menu text-right x-left">
+                            <!--<li><a href="#"><i class="ti-facebook"></i></a></li>-->
+                            <li><a href="https://www.twitter.com/YerToffeeRoll"><i class="ti-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/comm/in/sam-killen-775a5bb0?midToken=AQGtHDyHrVUsjg"><i class="ti-linkedin"></i></a></li>
+                            <li><a href="https://github.com/YerToffeeRoll"><i class="ti-github"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <p>You can get in contact with me in other traditional ways. Who doesn't love a tweet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <p>&copy;Copyright 2018 All right resurved.  This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://regalmajestic.co.uk">Regalmajestic</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-</div>
 
-<div class="get-down">
-    <a class="get-down-now" href="">
-        <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-           viewBox="-32 34.6 133.4 133.4" enable-background="new -32 34.6 133.4 133.4" xml:space="preserve">
-        <path fill="#FFFFFF" d="M34.7,34.6C-2.1,34.6-32,64.5-32,101.3c0,36.8,29.9,66.7,66.7,66.7c36.8,0,66.7-29.9,66.7-66.7
-          C101.4,64.5,71.5,34.6,34.7,34.6z M65.5,98.2l-25.2,25.6c-3.1,3.1-8.1,3.1-11.2,0L3.7,98.3c-3.1-3.2-3.1-8.2,0-11.4
-          c3.1-3.1,8.1-3.1,11.2,0l19.7,20l19.7-20c3.1-3.1,8.1-3.1,11.2,0C68.6,90,68.6,95.1,65.5,98.2z"/>
-        </svg>
-    </a>
 
-</div>
-</div>
 
-<script type='text/javascript' src='js/main.min.js'></script>
+
+    <!--Vendor-JS-->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!--Plugin-JS-->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/scrollUp.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!--Main-active-JS-->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
